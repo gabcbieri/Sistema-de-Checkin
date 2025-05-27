@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "eBNUoLWAcLsq24fGtwFRJg/BXz11jZa8q3o/65wGpjI=",
+  "Source": "CheckinAPI",
+  "BasePath": "_content/CheckinAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
