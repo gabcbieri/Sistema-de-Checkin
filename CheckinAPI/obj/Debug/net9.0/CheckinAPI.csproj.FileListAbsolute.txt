@@ -154,3 +154,6 @@ C:\Users\barbi\OneDrive\Documentos\Matérias - Universidade Positivo\TERCEIRO SE
 C:\Users\barbi\OneDrive\Documentos\Matérias - Universidade Positivo\TERCEIRO SEMESTRE\Tópicos Essenciais de Sistemas\checkin\CheckinAPI\obj\Debug\net9.0\CheckinAPI.pdb
 C:\Users\barbi\OneDrive\Documentos\Matérias - Universidade Positivo\TERCEIRO SEMESTRE\Tópicos Essenciais de Sistemas\checkin\CheckinAPI\obj\Debug\net9.0\CheckinAPI.genruntimeconfig.cache
 C:\Users\barbi\OneDrive\Documentos\Matérias - Universidade Positivo\TERCEIRO SEMESTRE\Tópicos Essenciais de Sistemas\checkin\CheckinAPI\obj\Debug\net9.0\ref\CheckinAPI.dll
+C:\Users\barbi\OneDrive\Documentos\Matérias - Universidade Positivo\TERCEIRO SEMESTRE\Tópicos Essenciais de Sistemas\checkin\checkinAPI\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\barbi\OneDrive\Documentos\Matérias - Universidade Positivo\TERCEIRO SEMESTRE\Tópicos Essenciais de Sistemas\checkin\checkinAPI\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\barbi\OneDrive\Documentos\Matérias - Universidade Positivo\TERCEIRO SEMESTRE\Tópicos Essenciais de Sistemas\checkin\checkinAPI\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll

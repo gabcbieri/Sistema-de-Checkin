@@ -15,7 +15,6 @@ namespace CheckInAPI.Controllers
             _context = context;
         }
 
-        // DELETE: api/checkin/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteCheckin(int id)
         {

@@ -16,14 +16,12 @@ namespace CheckInAPI.Controllers
             _context = context;
         }
 
-        // GET: api/checkin
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Checkin>>> GetCheckins()
         {
             return await _context.Checkins.ToListAsync();
         }
 
-        // GET: api/checkin/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Checkin>> CheckinGet(int id)
         {

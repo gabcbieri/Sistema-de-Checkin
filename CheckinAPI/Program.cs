@@ -4,30 +4,25 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Cria o caminho da pasta do banco de dados
 var pastaBanco = Path.Combine(Directory.GetCurrentDirectory(), "Banco");
-Directory.CreateDirectory(pastaBanco); // Garante que a pasta será criada
-
-// Caminho completo do banco de dados SQLite
+Directory.CreateDirectory(pastaBanco);
 var caminhoDoBanco = Path.Combine(pastaBanco, "checkinbanco.db");
 
-// Configura o Entity Framework com SQLite
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlite($"Data Source={caminhoDoBanco}"));
 
 builder.Services.AddControllers();
 
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+
 var app = builder.Build();
 
-// Cria o banco e popula registros iniciais se necessário
 using (var escopo = app.Services.CreateScope())
 {
     var contexto = escopo.ServiceProvider.GetRequiredService<AppDbContext>();
-
-    // Cria o banco se não existir
     contexto.Database.EnsureCreated();
 
-    // Adiciona registros iniciais se estiver vazio
     if (!contexto.Checkins.Any())
     {
         var registrosIniciais = new List<Checkin>
@@ -47,6 +42,12 @@ using (var escopo = app.Services.CreateScope())
         contexto.Checkins.AddRange(registrosIniciais);
         contexto.SaveChanges();
     }
+}
+
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
 }
 
 app.MapControllers();
